@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int size;
+    cout << "Enter size of an array: ";
+    cin >> size;
+    int no[size];
+    for (int k = 0; k < size; k++) 
+	{
+        cout << "Enter element " << k << ": ";
+        cin >> no[k];
+    }
+    for (int i = 0; i < size - 1; i++) 
+	{
+        for (int j = 0; j < size - i - 1; j++) 
+		{
+            if (no[j] > no[j + 1])
+			{
+                int temp = no[j];
+                no[j] = no[j + 1];
+                no[j + 1] = temp;
+            }
+        }
+    }
+    int large=no[size-1];
+    int small=no[size-size];
+    bool flag=true;
+    cout<<"Missing elements in the array are: ";
+    for(int p=small;p<=large;p++)
+    {
+    	for (int k = 0; k<(size-k); k++) 
+    	if(no[k]==p)
+    	{
+    	flag=true;
+    	}
+    	else
+    	{
+    		cout<<p<<",";
+		}
+	}
+	
+}

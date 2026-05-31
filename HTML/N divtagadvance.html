@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advance div tag</title>
+    <!--Internal CSS
+        This <style>tag provides area to write CSS-->
+    <style >
+        /*class main css*/
+        .main {
+            width:600px;
+            height: 300px;
+            background-color: aqua;
+        }        
+        #Parent-row-1{
+            width: 600px;
+            height: 150px;
+            background-color:aquamarine ;
+        }
+        #Parent-row-2{
+            width: 600px;
+            height: 150px;
+            background-color:rgb(108, 142, 131) ;
+        }
+        .col1{
+             width: 300px;
+            height: 150px;
+            background-color:rgb(166, 138, 239) ;
+            float: left;
+        }
+        .col2{
+             width: 300px;
+            height: 150px;
+            background-color:rgb(238, 127, 255) ;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"> <!--main div-->
+
+        <div id="Parent-row-1"> <!--Parent row 1-->
+            <div class="col1"> <!--col 1-->
+                Home 
+            </div>
+            <div class="col2"> <!--col 2-->
+                About
+            </div>
+        </div>
+        <hr/>
+        <div id="Parent-row-2"> <!--Parent row 2-->
+            <div class="col1"> <!--col 1-->
+                Gallery 
+            </div>
+            <div class="col2"> <!--col 2-->
+                Contact 
+            </div>
+        </div>
+    </div>
+    <h3>hello</h3>
+</body>
+</html>
